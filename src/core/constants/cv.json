@@ -1,0 +1,286 @@
+{
+    "name": "Jeisson Malaver",
+    "licenses_and_certifications": [
+        {
+            "title": "AWS Educate Getting Started with Storage",
+            "issuer": "Amazon Web Services (AWS)",
+            "issue_date": "Jul 2024",
+            "credential_id": "ba06acfc-a765-4e26-ac6e-d93adc21b53a",
+            "skills": [
+                "Amazon S3",
+                "Amazon Web Services (AWS)"
+            ],
+            "logo": "Amazon Web Services (AWS) logo"
+        },
+        {
+            "title": "Backend con Go",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "Curso de Go Avanzado: Arquitectura de Eventos y CQRS",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "credential_id": "42ed3774-8ea8-4f48-98ed-e3afbd13311f",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "Curso de Go Avanzado: REST y WebSockets",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "credential_id": "a026731a-8e55-45f8-9cb1-c3689a99a77a",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "Curso de Unit Testing en Go",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "credential_id": "4b9b571d-e044-4164-8c4b-d4cbc2569bb2",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "Curso Básico de Programación en Go",
+            "issuer": "Platzi",
+            "issue_date": "Jun 2024",
+            "credential_id": "9aaf0e0e-d658-4fee-8437-0fd4f5f74b96",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "Full Stack con Next.js",
+            "issuer": "Platzi",
+            "issue_date": "Jan 2024",
+            "credential_id": "6b0ab64c-90ad-47fd-b055-a6c632fb44f1",
+            "skills": [
+                "Next.js"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "AWS Partner: Accreditation (Technical)",
+            "issuer": "Amazon Web Services (AWS)",
+            "issue_date": "Mar 2022",
+            "skills": [
+                "Amazon Web Services (AWS)"
+            ],
+            "logo": "Amazon Web Services (AWS) logo"
+        },
+        {
+            "title": "Scrum Foundation Professional Certificate",
+            "issuer": "CertiProf",
+            "issue_date": "Nov 2020",
+            "credential_id": "52264092",
+            "skills": [
+                "Scrum"
+            ],
+            "logo": "CertiProf logo"
+        },
+        {
+            "title": "Responsive Web Design",
+            "issuer": "freeCodeCamp",
+            "issue_date": "Sep 2020",
+            "skills": [
+                "Diseño web adaptable"
+            ],
+            "logo": "freeCodeCamp logo"
+        },
+        {
+            "title": "Scrum Master Accredited Certification™",
+            "issuer": "International Scrum Institute™ (Scrum Institute)",
+            "issue_date": "Jan 2017",
+            "credential_id": "62207172004505",
+            "skills": [
+                "Scrum"
+            ],
+            "logo": "International Scrum Institute™ (Scrum Institute) logo"
+        },
+        {
+            "title": "Curso de Go Avanzado: Concurrencia y Patrones de Diseño",
+            "issuer": "Platzi",
+            "credential_id": "7443e2a3-7bbf-4337-8a80-5c1ce45c5d21",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        },
+        {
+            "title": "Curso de Go Intermedio: Programación Orientada a Objetos y Concurrencia",
+            "issuer": "Platzi",
+            "credential_id": "4d45f3e3-f479-455e-88b7-50098ba8d810",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Siigo",
+            "logo": "Siigo logo",
+            "role": "Frontend Developer",
+            "type": "Full-time",
+            "start_date": "Sep 2023",
+            "end_date": "Present",
+            "location": "Colombia · Remote",
+            "description": "Desarrollo Frontend: React (Gatsby y Next JS), Cloud: Azure (Blobstorage, Front Door, App Service), CI/CD: Github Actions",
+            "technologies": [
+                "React",
+                "Gatsby",
+                "Next.js",
+                "Azure (Blobstorage, Front Door, App Service)",
+                "Github Actions",
+                "Scrum"
+            ]
+        },
+        {
+            "company": "CarroYa",
+            "logo": "CarroYa logo",
+            "role": "Senior Frontend Developer",
+            "type": "Full-time",
+            "start_date": "Oct 2021",
+            "end_date": "Jul 2023",
+            "description": "Desarrollo Frontend: React (hooks, Jest, React Test Renderer, React Native), Stencil JS, Webpack (Module Federation), AWS: Terraform(S3, Cloudfront)",
+            "technologies": [
+                "React (hooks, Jest, React Test Renderer, React Native)",
+                "Stencil JS",
+                "Webpack (Module Federation)",
+                "AWS (Terraform, S3, Cloudfront)",
+                "Scrum",
+                "Microfrontends",
+                "Jest"
+            ]
+        },
+        {
+            "company": "everis",
+            "logo": "everis logo",
+            "role": "Consultor",
+            "type": "Full-time",
+            "start_date": "Apr 2021",
+            "end_date": "Oct 2021",
+            "description": "Proyecto: Banco Popular - Oferta de tarjeta de crédito, compra de cartera y adelantos en efectivo. Desarrollo Backend (Servicios REST con Java 8, Gradle, Spring Boot). Desarrollo Frontend (Angular 8, consumo API REST). Fundamentos en servicios AWS (S3, Dynamo, Cognito, Lambda). Uso del framework SCRUM.",
+            "technologies": [
+                "Java 8",
+                "Gradle",
+                "Spring Boot",
+                "Angular 8",
+                "AWS (S3, Dynamo, Cognito, Lambda)",
+                "SCRUM"
+            ]
+        },
+        {
+            "company": "Periferia IT Group",
+            "logo": "Periferia IT Group logo",
+            "role": "Desarrollador FullStack",
+            "type": "Full-time",
+            "start_date": "Nov 2020",
+            "end_date": "Mar 2021",
+            "location": "Colombia",
+            "description": "Proyecto: Scotiabank-Colpatria - Oferta de tarjeta de crédito, Credito rotativo, libre inversión. Desarrollo Backend (Servicios REST con Java 8, Gradle, Spring Boot, JPA, Spring Cloud). Bases de datos (Oracle 11G). Uso del framework SCRUM.",
+            "technologies": [
+                "Java 8",
+                "Gradle",
+                "Spring Boot",
+                "JPA",
+                "Spring Cloud",
+                "Oracle 11G",
+                "SCRUM"
+            ]
+        },
+        {
+            "company": "Gml Software Oficial",
+            "logo": "Gml Software Oficial logo",
+            "role": "Ingeniero de desarrollo",
+            "type": "Full-time",
+            "start_date": "Nov 2019",
+            "end_date": "Oct 2020",
+            "description": "Proyecto Colfuturo - Sistema de convocatorias y migración a seguimiento. Desarrollo Backend (Servicios REST con Java 8, Maven, Spring Boot, JWT, JPA). Desarrollo Frontend (Angular 6 y 7, consumo API REST, PrimeNG, Angular Material). Bases de datos (MariaDB, SQL Server 2003 y Mongo). Uso del framework SCRUM.",
+            "technologies": [
+                "Java 8",
+                "Maven",
+                "Spring Boot",
+                "JWT",
+                "JPA",
+                "Angular 6 y 7",
+                "PrimeNG",
+                "Angular Material",
+                "MariaDB",
+                "SQL Server 2003",
+                "MongoDB",
+                "SCRUM"
+            ]
+        },
+        {
+            "company": "Biolodos S.A E.S.P",
+            "logo": "Biolodos S.A E.S.P logo",
+            "role": "Ingeniero de sistemas",
+            "type": "Full-time",
+            "start_date": "Dec 2016",
+            "end_date": "Oct 2019",
+            "location": "Fusagasugá",
+            "description": "Desarrollo Backend Java 8 (Maven y Spring Boot). Desarrollo monolítico y API REST PHP (Laravel 5.4, Eloquent, CodeIgniter). Desarrollo Frontend: (Angular 2, 4, 5 y 6, Electron, Leaflet). Bases de datos: MariaDB. Uso de SCRUM en proyectos. Uso de Kanban en la atención a incidentes.",
+            "technologies": [
+                "Java 8",
+                "Maven",
+                "Spring Boot",
+                "PHP (Laravel 5.4, Eloquent, CodeIgniter)",
+                "Angular 2, 4, 5 y 6",
+                "Electron",
+                "Leaflet",
+                "MariaDB",
+                "SCRUM",
+                "Kanban"
+            ]
+        },
+        {
+            "company": "A SU SERVICIO TEMPORALES SAS",
+            "logo": "A SU SERVICIO TEMPORALES SAS logo",
+            "role": "Ingeniero de software",
+            "type": "Full-time",
+            "start_date": "May 2016",
+            "end_date": "Dec 2016",
+            "description": "Proyecto: Biolodos. Sitio web (Wordpress, JQuery y CSS3). PHP (Laravel 5.3, Eloquent). Aplicación de escritorio: Java SE (JavaFX).",
+            "technologies": [
+                "Wordpress",
+                "JQuery",
+                "CSS3",
+                "PHP (Laravel 5.3, Eloquent)",
+                "Java SE (JavaFX)"
+            ]
+        },
+        {
+            "company": "Alcaldía Municipal De Fusagasugá",
+            "logo": "Alcaldía Municipal de Fusagasugá Cundinamarca logo",
+            "role": "Desarrollador junior",
+            "type": "Full-time",
+            "start_date": "Apr 2015",
+            "end_date": "Dec 2015",
+            "description": "Android (Java, Retrofit, Gradle, web scraping). PHP (Symfony 2 y Doctrine). Animación en HTML5 (Skrollr, CSS3 y JavaScript Vanilla).",
+            "technologies": [
+                "Java",
+                "Retrofit",
+                "Gradle",
+                "web scraping",
+                "PHP (Symfony 2 y Doctrine)",
+                "HTML5",
+                "Skrollr",
+                "CSS3",
+                "JavaScript Vanilla"
+            ]
+        }
+    ]
+}
