@@ -1,5 +1,16 @@
 {
     "name": "Jeisson Malaver",
+    "desciption": "8 años de experiencia en desarrollo web para sectores bancario, publicidad de internet y financiero, creando experiencias dinámicas e interactivas, me apasiona fusionar la creatividad con la funcionalidad, creando soluciones visualmente impactantes, intuitivas y de alto rendimiento.",
+    "social_network": [
+        {
+            "name":"Github",
+            "url": "https://github.com/jeissonmgz"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/jeissonmgz/"
+        }
+    ],
     "licenses_and_certifications": [
         {
             "title": "AWS Educate Getting Started with Storage",
@@ -10,56 +21,8 @@
                 "Amazon S3",
                 "Amazon Web Services (AWS)"
             ],
-            "logo": "Amazon Web Services (AWS) logo"
-        },
-        {
-            "title": "Backend con Go",
-            "issuer": "Platzi",
-            "issue_date": "Jul 2024",
-            "skills": [
-                "Go"
-            ],
-            "logo": "Platzi logo"
-        },
-        {
-            "title": "Curso de Go Avanzado: Arquitectura de Eventos y CQRS",
-            "issuer": "Platzi",
-            "issue_date": "Jul 2024",
-            "credential_id": "42ed3774-8ea8-4f48-98ed-e3afbd13311f",
-            "skills": [
-                "Go"
-            ],
-            "logo": "Platzi logo"
-        },
-        {
-            "title": "Curso de Go Avanzado: REST y WebSockets",
-            "issuer": "Platzi",
-            "issue_date": "Jul 2024",
-            "credential_id": "a026731a-8e55-45f8-9cb1-c3689a99a77a",
-            "skills": [
-                "Go"
-            ],
-            "logo": "Platzi logo"
-        },
-        {
-            "title": "Curso de Unit Testing en Go",
-            "issuer": "Platzi",
-            "issue_date": "Jul 2024",
-            "credential_id": "4b9b571d-e044-4164-8c4b-d4cbc2569bb2",
-            "skills": [
-                "Go"
-            ],
-            "logo": "Platzi logo"
-        },
-        {
-            "title": "Curso Básico de Programación en Go",
-            "issuer": "Platzi",
-            "issue_date": "Jun 2024",
-            "credential_id": "9aaf0e0e-d658-4fee-8437-0fd4f5f74b96",
-            "skills": [
-                "Go"
-            ],
-            "logo": "Platzi logo"
+            "logo": "Amazon Web Services (AWS) logo",
+            "view": "https://www.credly.com/badges/ba06acfc-a765-4e26-ac6e-d93adc21b53a"
         },
         {
             "title": "Full Stack con Next.js",
@@ -69,7 +32,8 @@
             "skills": [
                 "Next.js"
             ],
-            "logo": "Platzi logo"
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/learning-path/7049-web-next/diploma/detalle/"
         },
         {
             "title": "AWS Partner: Accreditation (Technical)",
@@ -78,7 +42,8 @@
             "skills": [
                 "Amazon Web Services (AWS)"
             ],
-            "logo": "Amazon Web Services (AWS) logo"
+            "logo": "Amazon Web Services (AWS) logo",
+            "view": "https://www.credly.com/badges/a355ce75-2e8e-4ccf-a291-bcdf33dbc231"
         },
         {
             "title": "Scrum Foundation Professional Certificate",
@@ -97,7 +62,8 @@
             "skills": [
                 "Diseño web adaptable"
             ],
-            "logo": "freeCodeCamp logo"
+            "logo": "freeCodeCamp logo",
+            "view": "https://www.freecodecamp.org/certification/jeissonmgz/responsive-web-design"
         },
         {
             "title": "Scrum Master Accredited Certification™",
@@ -107,7 +73,40 @@
             "skills": [
                 "Scrum"
             ],
-            "logo": "International Scrum Institute™ (Scrum Institute) logo"
+            "logo": "International Scrum Institute™ (Scrum Institute) logo",
+            "view": "https://www.scrum-institute.org/badges/62207172004505"
+        },
+        {
+            "title": "Backend con Go",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/ruta/7171-web-go/diploma/detalle/"
+        },
+        {
+            "title": "Curso de Go Avanzado: REST y WebSockets",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "credential_id": "a026731a-8e55-45f8-9cb1-c3689a99a77a",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/curso/2946-go-rest-websockets/diploma/detalle/"
+        },
+        {
+            "title": "Curso de Go Avanzado: Arquitectura de Eventos y CQRS",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "credential_id": "42ed3774-8ea8-4f48-98ed-e3afbd13311f",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/curso/2944-go-eventos-cqrs/diploma/detalle/"
         },
         {
             "title": "Curso de Go Avanzado: Concurrencia y Patrones de Diseño",
@@ -116,7 +115,19 @@
             "skills": [
                 "Go"
             ],
-            "logo": "Platzi logo"
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/curso/2388-golang-avanzado/diploma/detalle/"
+        },
+        {
+            "title": "Curso de Unit Testing en Go",
+            "issuer": "Platzi",
+            "issue_date": "Jul 2024",
+            "credential_id": "4b9b571d-e044-4164-8c4b-d4cbc2569bb2",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/curso/3337-course/diploma/detalle/"
         },
         {
             "title": "Curso de Go Intermedio: Programación Orientada a Objetos y Concurrencia",
@@ -125,7 +136,19 @@
             "skills": [
                 "Go"
             ],
-            "logo": "Platzi logo"
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/curso/2357-golang-intermedio/diploma/detalle/"
+        },
+        {
+            "title": "Curso Básico de Programación en Go",
+            "issuer": "Platzi",
+            "issue_date": "Jun 2024",
+            "credential_id": "9aaf0e0e-d658-4fee-8437-0fd4f5f74b96",
+            "skills": [
+                "Go"
+            ],
+            "logo": "Platzi logo",
+            "view": "https://platzi.com/p/jeissonmalaver/curso/2232-programacion-golang/diploma/detalle/"
         }
     ],
     "experience": [
@@ -137,7 +160,7 @@
             "start_date": "Sep 2023",
             "end_date": "Present",
             "location": "Colombia · Remote",
-            "description": "Desarrollo Frontend: React (Gatsby y Next JS), Cloud: Azure (Blobstorage, Front Door, App Service), CI/CD: Github Actions",
+            "description": "Sitio web con usando SSR de alta concurrencia, implementando SEO, captación de leads y proceso de compra.",
             "technologies": [
                 "React",
                 "Gatsby",
@@ -154,7 +177,7 @@
             "type": "Full-time",
             "start_date": "Oct 2021",
             "end_date": "Jul 2023",
-            "description": "Desarrollo Frontend: React (hooks, Jest, React Test Renderer, React Native), Stencil JS, Webpack (Module Federation), AWS: Terraform(S3, Cloudfront)",
+            "description": "Plataforma de pagos, asistencias y venta de vehículos con SEO. App móvil con tokenización de tarjetas.",
             "technologies": [
                 "React (hooks, Jest, React Test Renderer, React Native)",
                 "Stencil JS",
@@ -172,7 +195,7 @@
             "type": "Full-time",
             "start_date": "Apr 2021",
             "end_date": "Oct 2021",
-            "description": "Proyecto: Banco Popular - Oferta de tarjeta de crédito, compra de cartera y adelantos en efectivo. Desarrollo Backend (Servicios REST con Java 8, Gradle, Spring Boot). Desarrollo Frontend (Angular 8, consumo API REST). Fundamentos en servicios AWS (S3, Dynamo, Cognito, Lambda). Uso del framework SCRUM.",
+            "description": "Proyecto: Banco Popular - Oferta de tarjetas de crédito, compra de cartera y adelantos en efectivo con autenticación biométrica.",
             "technologies": [
                 "Java 8",
                 "Gradle",
@@ -190,7 +213,7 @@
             "start_date": "Nov 2020",
             "end_date": "Mar 2021",
             "location": "Colombia",
-            "description": "Proyecto: Scotiabank-Colpatria - Oferta de tarjeta de crédito, Credito rotativo, libre inversión. Desarrollo Backend (Servicios REST con Java 8, Gradle, Spring Boot, JPA, Spring Cloud). Bases de datos (Oracle 11G). Uso del framework SCRUM.",
+            "description": "Proyecto: Scotiabank-Colpatria - Oferta de tarjetas de crédito, crédito rotativo y libre inversión con venta cruzada, con conexión a sistemas externos y legacy.",
             "technologies": [
                 "Java 8",
                 "Gradle",
@@ -208,7 +231,7 @@
             "type": "Full-time",
             "start_date": "Nov 2019",
             "end_date": "Oct 2020",
-            "description": "Proyecto Colfuturo - Sistema de convocatorias y migración a seguimiento. Desarrollo Backend (Servicios REST con Java 8, Maven, Spring Boot, JWT, JPA). Desarrollo Frontend (Angular 6 y 7, consumo API REST, PrimeNG, Angular Material). Bases de datos (MariaDB, SQL Server 2003 y Mongo). Uso del framework SCRUM.",
+            "description": "Proyecto Colfuturo - Plataforma para créditos y becas a estudiantes profesionales en el exterior.",
             "technologies": [
                 "Java 8",
                 "Maven",
@@ -232,7 +255,7 @@
             "start_date": "Dec 2016",
             "end_date": "Oct 2019",
             "location": "Fusagasugá",
-            "description": "Desarrollo Backend Java 8 (Maven y Spring Boot). Desarrollo monolítico y API REST PHP (Laravel 5.4, Eloquent, CodeIgniter). Desarrollo Frontend: (Angular 2, 4, 5 y 6, Electron, Leaflet). Bases de datos: MariaDB. Uso de SCRUM en proyectos. Uso de Kanban en la atención a incidentes.",
+            "description": "Sistema de georreferenciación, dimensionamiento y presupuestos de plantas de tratamiento.",
             "technologies": [
                 "Java 8",
                 "Maven",
@@ -253,7 +276,7 @@
             "type": "Full-time",
             "start_date": "May 2016",
             "end_date": "Dec 2016",
-            "description": "Proyecto: Biolodos. Sitio web (Wordpress, JQuery y CSS3). PHP (Laravel 5.3, Eloquent). Aplicación de escritorio: Java SE (JavaFX).",
+            "description": "Plataforma de certificados para el tratamiento de residuos y sistema de encriptación de contraseñas.",
             "technologies": [
                 "Wordpress",
                 "JQuery",
@@ -269,9 +292,10 @@
             "type": "Full-time",
             "start_date": "Apr 2015",
             "end_date": "Dec 2015",
-            "description": "Android (Java, Retrofit, Gradle, web scraping). PHP (Symfony 2 y Doctrine). Animación en HTML5 (Skrollr, CSS3 y JavaScript Vanilla).",
+            "description": "Aplicación móvil para la oficina TIC, registro de incidencias en el alumbrado público y animaciones sobre los logros de la oficina TIC.",
             "technologies": [
                 "Java",
+                "Android",
                 "Retrofit",
                 "Gradle",
                 "web scraping",

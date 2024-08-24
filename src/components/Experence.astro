@@ -1,0 +1,99 @@
+---
+
+import { getCVDataAdapter } from "../core/registry";
+
+const cvData = getCVDataAdapter();
+---
+
+{
+    cvData.experience.map((item) => (
+        <section class="bg-black text-gray-300 py-4 px-4 sm:px12 lg:px-24">
+            <div class="lg:max-w-7xl mx-auto image-container">
+                <div class="blurred-edges ">
+                    <img
+                        src={"./alcaldia.avif"}
+                        alt="Imagen de fondo"
+                        class="background-image"
+                    />
+                </div>
+
+                <div class="text-overlay">
+                    <h2 class="text-3xl font-bold mt-8 text-white">
+                        {item.role} en {item.company.name}
+                    </h2>
+                    <p>
+                        {item.type} en {item.location}
+                    </p>
+                    <p class="text-base">
+                        <time>{item.startDate}</time> -{" "}
+                        <time>{item.endDate}</time>
+                    </p>
+                    <p class="text-base mt-10 max-w-prose">
+                        {item.description}
+                    </p>
+                    <p class="flex gap-2 flex-wrap mb-8">
+                        {item.technologies.map((tech) => (
+                            <span class="text-base bg-red-500 px-2 py ">
+                                {tech.name}
+                            </span>
+                        ))}
+                    </p>
+                </div>
+            </div>
+        </section>
+    ))
+}
+
+
+<style>
+	.image-container {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		min-height: 100vh;
+	}
+
+	.blurred-edges {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+
+	.blurred-edges::after {
+		content: "";
+		position: absolute;
+		top: 0; /* Ajusta este valor según el tamaño del difuminado */
+		right: 0;
+		width: 100%;
+		height: 100%; /* Ajusta este valor según el tamaño del difuminado */
+		background: linear-gradient(
+			to right,
+			rgb(0, 0, 0, 1) 0%,
+			rgb(0, 0, 0, 0) 10%,
+			rgb(0, 0, 0, 0) 90%,
+			rgb(0, 0, 0, 1) 100%
+		);
+	}
+
+	.background-image {
+		width: 100%;
+		height: 100%;
+		opacity: 0.3;
+		object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.text-overlay {
+		min-height: 100vh;
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+	}
+</style>

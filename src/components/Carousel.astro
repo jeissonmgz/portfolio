@@ -1,0 +1,142 @@
+---
+---
+
+<div class="relative w-full mx-auto px-0 md:px-8 my-20 md:my-0">
+    <div class="relative w-full mx-auto overflow-hidden">
+        <!-- Carrusel -->
+        <div
+            class={`carousel mx-auto flex overflow-hidden scroll-smooth max-w-[300px] min-w-[300px] md:max-w-[600px] md:min-w-[600px] xl:max-w-[750px] xl:min-w-[750px] 2xl:max-w-[900px] 2xl:min-w-[900px]`}
+        >
+            <!-- Elementos del Carrusel -->
+
+            <slot />
+        </div>
+    </div>
+    <!-- Botón Izquierda -->
+    <button
+        class="btn-carousel btn-carousel-prev btn-carousel--inactive absolute -top-14 md:top-1/2 left-1/2 md:left-6 lg:-left-6 transform md:-translate-y-1/2 -translate-x-1/2 md:translate-x-0 text-white rounded-full size-12 from-cyan-500 to-purple-500 text-6xl"
+    >
+        <span class="md:-mt-4 md:ml-0 md:rotate-0 -mt-2 ml-4 block rotate-90">&#8249;</span>
+    </button>
+    <!-- Botón Derecha -->
+    <button
+        class="btn-carousel btn-carousel-next absolute md:top-1/2 left-1/2 -bottom-14 md:left-auto md:right-6 lg:-right-6 transform md:-translate-y-1/2 -translate-x-1/2 md:translate-x-0 text-white rounded-full size-12 bg-gradient-to-br from-cyan-500 to-purple-500 text-6xl"
+    >
+        <span class="md:-mt-4 md:ml-0 md:rotate-0 -mt-1 ml-4 block rotate-90">&#8250;</span>
+    </button>
+</div>
+
+
+<script>
+	const prevButtons = document.querySelectorAll(".btn-carousel-prev");
+	const nextButtons = document.querySelectorAll(".btn-carousel-next");
+
+	function getCardWidth(carousel: Element) {
+		const cardWidth = carousel.scrollWidth / carousel?.children?.length;
+		return cardWidth;
+	}
+
+	function getCarousel(element: Element) {
+		const carousel = element.parentNode?.querySelector(".carousel") as Element;
+		return carousel;
+	}
+
+    function getPrevButton(carousel: Element) {
+        return carousel.parentNode?.parentNode?.querySelector(".btn-carousel-prev") as Element;
+    }
+
+    function getNextButton(carousel: Element) {
+        return carousel.parentNode?.parentNode?.querySelector(".btn-carousel-next") as Element;
+    }
+
+	nextButtons?.forEach(nextButton => {
+        nextButton.addEventListener("click", () => {
+            const carousel: Element = getCarousel(nextButton);
+            const prevButton = getPrevButton(carousel);
+            const cardWidth = getCardWidth(carousel);
+            const actualPosition = carousel.scrollLeft;
+            const actualItem = (cardWidth  * Math.round(actualPosition/cardWidth)) / cardWidth;
+            const futurePosition = (cardWidth * (actualItem + 1));
+            const incrementScroll = futurePosition - actualPosition;
+            carousel?.scrollBy({ left: incrementScroll, behavior: "smooth" });
+            const futurePositionLastPixel = futurePosition+ carousel?.clientWidth;
+            if (futurePositionLastPixel >= carousel.scrollWidth) {
+                nextButton.classList.remove("bg-gradient-to-br");
+                nextButton.classList.add("btn-carousel--inactive");
+            } else {
+                prevButton.classList.add("bg-gradient-to-br");
+                prevButton.classList.remove("btn-carousel--inactive");
+            }
+	    }); 
+    });
+
+	prevButtons?.forEach(prevButton => {
+        prevButton.addEventListener("click", () => {
+            const carousel = getCarousel(prevButton)
+            const nextButton = getNextButton(carousel);
+            const cardWidth = getCardWidth(carousel);
+            const actualPosition = carousel.scrollLeft;
+            const actualItem = (cardWidth  * Math.round(actualPosition/cardWidth)) / cardWidth;
+            const futurePosition = (cardWidth * (actualItem - 1));
+            const incrementScroll = futurePosition - actualPosition;
+            carousel?.scrollBy({ left: incrementScroll, behavior: "smooth" });
+            if (actualPosition + incrementScroll <= 0) {
+                prevButton.classList.remove("bg-gradient-to-br");
+                prevButton.classList.add("btn-carousel--inactive");
+            } else {
+                nextButton.classList.add("bg-gradient-to-br");
+                nextButton.classList.remove("btn-carousel--inactive");
+            }
+        });
+    });
+</script>
+
+<style>
+	.btn-carousel {
+		-webkit-box-shadow:
+			2px 2px 12px rgb(0, 0, 0, 0.4),
+			-2px -2px 12px rgb(255, 255, 255, 0.4);
+		box-shadow:
+			2px 2px 12px rgb(0, 0, 0, 0.4),
+			-2px -2px 12px rgb(255, 255, 255, 0.4);
+		color: #d6d6d6;
+		-webkit-transition: 500ms;
+		transition: 500ms;
+	}
+
+	.btn-carousel:hover {
+		-webkit-box-shadow:
+			2px 2px 12px rgb(0, 0, 0, 0.4),
+			-2px -2px 12px rgb(255, 255, 255, 0.4);
+		box-shadow:
+			2px 2px 12px rgb(0, 0, 0, 0.4),
+			-2px -2px 12px rgb(255, 255, 255, 0.4);
+		color: #f8f8f8;
+		-webkit-transition: 500ms;
+		transition: 500ms;
+	}
+
+	.btn-carousel:active {
+		-webkit-box-shadow:
+			4px 4px 16px rgb(0, 0, 0, 0.4),
+			-4px -4px 16px rgb(255, 255, 255, 0.4);
+		box-shadow:
+			4px 4px 16px rgb(0, 0, 0, 0.4),
+			-4px -4px 16px rgb(255, 255, 255, 0.4);
+		color: white;
+		-webkit-transition: 100ms;
+		transition: 100ms;
+	}
+	.btn-carousel--inactive {
+        box-shadow: inset 4px 4px 16px rgb(0, 0, 0, 0.2),
+                    inset -4px -4px 16px rgb(255, 255, 255, 0.2);
+	}
+	.btn-carousel--inactive:hover {
+        box-shadow: inset 4px 4px 16px rgb(0, 0, 0, 0.2),
+                    inset -4px -4px 16px rgb(255, 255, 255, 0.2);
+	}
+    .carousel {
+        background: linear-gradient(145deg, rgb(0, 0, 0, 0.2), rgb(255, 255, 255, 0.05));
+        border-radius: 25px;
+    }
+</style>

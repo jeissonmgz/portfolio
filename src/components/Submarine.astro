@@ -1,0 +1,85 @@
+---
+import { Image } from "astro:assets";
+import submarineSVG from "../../public/submarine-nautic.svg";
+---
+
+<div id="submarine" data-protagonist class="protagonist rotate-init">
+    <div class="animate-bounce-little">
+        <Image
+            src={submarineSVG}
+            alt=""
+            widths={[240, 540, 720, submarineSVG.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${submarineSVG.width}px`}
+        />
+    </div>
+</div>
+
+<style>
+    @keyframes rotate-init {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(-30deg);
+        }
+    }
+
+    @keyframes rotate-next {
+        from {
+            transform: rotate(-30deg);
+        }
+        to {
+            transform: rotate(30deg);
+        }
+    }
+
+    @keyframes rotate-back {
+        from {
+            transform: rotate(30deg);
+        }
+        to {
+            transform: rotate(-30deg);
+        }
+    }
+
+    .rotate-init {
+        animation: rotate-init 0.5s ease-in-out forwards;
+    }
+    .rotate-next {
+        animation: rotate-next 0.5s ease-in-out forwards;
+    }
+
+    .rotate-back {
+        animation: rotate-back 0.5s ease-in-out forwards;
+    }
+    .protagonist {
+        position: sticky;
+        top: 50px;
+        left: 50px;
+        width: fit-content;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const element = document.getElementById("submarine");
+
+        window.addEventListener("scroll", function () {
+            let scrollTop =
+                window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                element?.classList.remove("rotate-back");
+                element?.classList.add("rotate-next");
+            } else {
+                // Scrolling up
+                element?.classList.remove("rotate-next");
+                element?.classList.add("rotate-back");
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
+    });
+</script>

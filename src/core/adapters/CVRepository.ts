@@ -7,6 +7,8 @@ export const CVRepositoryAdapter: CVRepository = {
     getCV: (): ICurriculum => {
         return {
             name: cvData.name,
+            description: cvData.desciption,
+            socialNetworks: cvData.social_network,
             licensesAndCertifications: cvData.licenses_and_certifications.map(item=>({
                 name: item.title,
                 entity: {
@@ -19,7 +21,8 @@ export const CVRepositoryAdapter: CVRepository = {
                     name: skill
                 })),
                 startDate: new Date(),
-                endDate: new Date()
+                endDate: new Date(),
+                link: item.view
             })),
             experience: cvData.experience.map(item => ({
                 role: item.role,
@@ -28,8 +31,8 @@ export const CVRepositoryAdapter: CVRepository = {
                     logo: item.logo,
                     name: item.company
                 },
-                startDate: new Date(),
-                endDate: new Date(),
+                startDate: item.start_date,
+                endDate: item.end_date,
                 location: item.location,
                 description: item.description,
                 technologies: item.technologies.map(skill=>({
